@@ -48,7 +48,7 @@ const Entry = () => {
   }
   return (
 
-    <div className='entry-page bg-inf o'>
+    <div className='entry-page bg-info'>
      <div class="mt-4 p-5 bg-white text-dark rounded form-box" >
           
           {formLoad==="login" && <Login handleOnChange={handleOnChange}

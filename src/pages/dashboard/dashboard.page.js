@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import TicketTable from '../../../components/ticket-table/ticketTable.com'
-import tickets from "../../../assets/img/data/dummy-tickets.json"
-import BreadCrumb from '../../../components/breadcrumbs/breadcrumb.comp'
+import TicketTable from '../../components/ticket-table/ticketTable.com'
+import tickets from "../../assets/img/data/dummy-tickets.json"
+import BreadCrumb from '../../components/breadcrumbs/breadcrumb.comp'
 const Dashboard = () => {
   return (
    <Container>
