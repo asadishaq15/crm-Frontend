@@ -5,7 +5,7 @@ import Footer from './partial/footer.comp'
 const DefaultLayout = ({children}) => {
   return (
     <div className='default-layout'>
-        <header className='header'>
+        <header className='header mb-2'>
       <Header/>
 
         </header>
