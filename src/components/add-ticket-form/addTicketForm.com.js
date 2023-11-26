@@ -54,7 +54,7 @@ const AddTicketForm = ({handleOnChange,handleOnSubmit,frmDt}) => {
         required
         />
     </Form.Group>
-    <Button type='submit' variant="info" block >Add</Button>
+    <Button type='submit' variant="info" block >Open Ticket</Button>
 </Form>
     </div>
   )
