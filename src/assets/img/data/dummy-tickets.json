@@ -3,7 +3,22 @@
         "id":1,
         "subject":"issue with email account",
         "status":"client response is pending ",
-        "addedat":"2020-10-15"
+        "addedat":"2020-10-15",
+        "history":[
+            {"date":"20-03-12",
+            "message":"sdafscd",
+            "messageBy":"client"
+             },
+             {"date":"20-03-12",
+             "message":"sdafscd",
+             "messageBy":"operator"
+              },
+              {"date":"20-03-12",
+              "message":"sdafscd",
+              "messageBy":"client"
+               }
+        ]
+
 
     },
     {
