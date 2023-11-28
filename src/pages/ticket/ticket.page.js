@@ -4,13 +4,21 @@ import BreadCrumb from '../../components/breadcrumbs/breadcrumb.comp'
 import tickets from "../../assets/img/data/dummy-tickets.json"
 import MessageHistory from '../../components/message-history/messageHistory.comp';
 import UpdateTicket from '../../components/update-ticket/updateTicket.comp';
+import { useParams } from 'react-router';
 const ticket=tickets[0];
+
 const Ticket = () => {
-
+    const {tid} =useParams();
     const [message,setMessage]=useState("")
+    const [ticket,setTicket]=useState("")
     useEffect(()=>{
-
-    },[message])
+        for (let i = 0; i < tickets.length; i++) {
+          if (tickets[i].id == tid )
+          setTicket(tickets[i])
+        continue
+            
+        }
+    },[message,tid])
 
 
     const handleOnChange =(e)=>{
@@ -29,6 +37,7 @@ const Ticket = () => {
         </Row>
         <Row>
             <Col className='text-weight-border text-secondary'>
+                {tid}
             <div className='subject'>Subject: {ticket.subject}</div>
             <div className='date'>Ticket Opened: {ticket.status}</div>
             <div className='status'>status: {ticket.addedat}</div>
@@ -38,7 +47,8 @@ const Ticket = () => {
             </Col>
             <Row className='mt-4'>
                 <Col>
-                    <MessageHistory msg={ticket.history}/>
+                {ticket.history &&  <MessageHistory msg={ticket.history}/> }
+                   
                 </Col>
             </Row>
         </Row>
