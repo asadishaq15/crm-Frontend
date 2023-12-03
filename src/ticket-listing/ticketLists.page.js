@@ -36,7 +36,7 @@ const TicketLists = () => {
     <Row className='mt-4'>
         <Col>
             <Link to="/add-ticket">
-           <Button variant='info'>Add New Tickets</Button>
+           <Button variant='info'>Add New Tickets!</Button>
            </Link>
         </Col>
         <Col>
