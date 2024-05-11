@@ -16,18 +16,18 @@ function App() {
 			<Router>
 				<Routes>
         <Route exact path='/' element={<Entry/>}/>
-       <Route path='/dashboard' element={<PrivateRoute/>} >
+       {/* <Route path='/dashboard' element={<PrivateRoute/>} > */}
         <Route path='/dashboard' element={<Dashboard/>}/>
-       </Route>
-       <Route path='/add-ticket' element={<PrivateRoute/>} >
+       {/* </Route> */}
+       {/* <Route path='/add-ticket' element={<PrivateRoute/>} > */}
         <Route path='/add-ticket' element={<AddTicket/>}/>
-       </Route>
-       <Route path='/tickets' element={<PrivateRoute/>} >
+       {/* </Route> */}
+       {/* <Route path='/tickets' element={<PrivateRoute/>} > */}
         <Route path='/tickets' element={<TicketLists/>}/>
-       </Route>
-       <Route path='/ticket/:tid' element={<PrivateRoute/>} >
+       {/* </Route> */}
+       {/* <Route path='/ticket/:tid' element={<PrivateRoute/>} > */}
         <Route path='/ticket/:tid' element={<Ticket/>}/>
-       </Route>
+       {/* </Route> */}
 				</Routes>
 			</Router>
 		</div>
